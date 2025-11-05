@@ -34,8 +34,7 @@ contract DirectedFundraiser {
         emit DonationReceived(msg.sender, msg.value, message, block.timestamp);
     }
 
-    function withdrawFunds() public {
-        require(msg.sender == beneficiary, "Only beneficiary can withdraw");
+    function withdrawFunds() public onlyBeneficiary {
         uint amount = address(this).balance;
         require(amount > 0, "No funds to withdraw");
 
@@ -61,5 +60,10 @@ contract DirectedFundraiser {
 
     function isGoalReached() public view returns (bool) {
         return totalDonations >= goalAmount;
+    }
+
+    modifier onlyBeneficiary() {
+    require(msg.sender == beneficiary, "Only beneficiary can withdraw");
+    _;
     }
 }
