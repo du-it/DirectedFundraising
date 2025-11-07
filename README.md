@@ -33,7 +33,7 @@ Ein Deployment kann auf Sepolia oder andere Testnets erfolgen.
 👉 Für lokale Entwicklung siehe [`README.remix.md` auf GitHub](https://github.com/du-it/DirectedFundraiser/blob/main/README.remix.md)
 
 ## 📦 Deployment-Skript (optional)
-Das Hardhat-Skript zur automatisierten Bereitstellung ist unter *`scripts/deploy_directedFundraiser.ts`** hinterlegt.  
+Das Hardhat-Skript zur automatisierten Bereitstellung ist unter *`scripts/deploy_directedFundraiser.ts`* hinterlegt.  
 👉 Für lokale Entwicklung mit Hardhat siehe [`README.hardhat.md`](./README.hardhat.md)  
 👉 Für lokale Entwicklung siehe [`README.hardhat.md` auf GitHub](https://github.com/du-it/DirectedFundraiser/blob/main/README.hardhat.md)
 
