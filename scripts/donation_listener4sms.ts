@@ -1,5 +1,7 @@
 import { ethers } from "ethers";
-import { sendEmail, sendSMS } from "./notify"; // eigene Module
+import { sendEmail } from "./notifyByEmail";
+import { sendSMS } from "./notifyBySms";
+
 
 const provider = new ethers.JsonRpcProvider("https://mainnet.infura.io/v3/b01d342827ae465ca56906b069c9eefc");
 const contractAddress = "0xeA1B9dfe31F56B78900c4d0E6682f77e939c5794";
