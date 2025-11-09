@@ -1,4 +1,4 @@
-# Bilder als Binärdateien kennzeichnen
-*.png binary
-*.jpg binary
-*.jpeg binary
+# Binärdateien
+*.png binary binary
+*.jpg binary binary
+*.jpeg binary binary
